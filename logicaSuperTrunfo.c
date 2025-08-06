@@ -1,5 +1,5 @@
 /// Descrição do projeto : Este código é uma implementação simples de um jogo de cartas chamado "Super Trunfo" em C.
-// nivel novato
+// nivel logica novato
 
 #include <stdio.h>
 
@@ -116,13 +116,22 @@ int main() {
     printf("Super Poder: %.2f\n", superPoder2);
     printf("--------------\n");
 
-    // --- Comparação de cartas (Atributo: População) ---
-    printf("\nComparação de cartas (Atributo: População):\n");
-    printf("Carta 1 - %s: %lu\n", nomeCidade1, populacao1);
-    printf("Carta 2 - %s: %lu\n", nomeCidade2, populacao2);
+    // --- Comparação ---
+    printf("\n---- COMPARAÇÃO DE CARTAS ---\n");
+    printf("População: %d\n", populacao1 > populacao2);
+    printf("Área: %d\n", area1 > area2);
+    printf("PIB: %d\n", pib1 > pib2);
+    printf("Densidade Populacional: %d\n", densidadePopulacional1 < densidadePopulacional2); 
+    printf("Super Poder: %d\n", superPoder1 > superPoder2); 
+    printf("Pontos Turísticos: %d\n", pontosTuristicos1 > pontosTuristicos2);        
+  
 
+    printf("--------------\n");
+
+
+    // --- Verificação de vencedor ---
+    printf("\n---- Carta vencedora ---\n");
     if (populacao1 > populacao2) {
-        if (populacao1 > populacao2) {
         printf("Carta 1 - %s, %d\n", nomeCidade1, populacao1);
         printf("Carta 2 - %s, %d\n\n", nomeCidade2, populacao2);
         printf("Carta 1 é a vencedora!\n");
@@ -137,4 +146,5 @@ int main() {
     }
 
     printf("--------------\n");
+    return 0;
 }
