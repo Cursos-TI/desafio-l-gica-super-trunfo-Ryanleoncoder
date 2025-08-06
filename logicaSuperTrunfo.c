@@ -12,13 +12,13 @@ int main() {
     float area1;
     float pib1;
     int pontosTuristicos1;
-    float densidadePopulacional1 = 0.0f, pibPerCapita1 = 0.0f, superPoder1 = 0.0f;
+    double densidadePopulacional1 = 0.0, pibPerCapita1 = 0.0, superPoder1 = 0.0;
 
     printf("\n-- Faça a primeira carta --\n");
     printf("Digite o estado (A-H): ");
     scanf(" %c", &estado1);
     printf("Digite o código da carta (ex: A01): ");
-    scanf("%s", codigo1);
+    scanf("%49s", codigo1);
     printf("Digite o nome da cidade: ");
     scanf(" %49[^\n]", nomeCidade1);
     printf("Digite a população da cidade: ");
@@ -38,13 +38,13 @@ int main() {
     float area2;
     float pib2;
     int pontosTuristicos2;
-    float densidadePopulacional2 = 0.0f, pibPerCapita2 = 0.0f, superPoder2 = 0.0f;
+    double densidadePopulacional2 = 0.0, pibPerCapita2 = 0.0, superPoder2 = 0.0;
 
     printf("\n-- Faça a segunda carta --\n");
     printf("Digite o estado (A-H): ");
     scanf(" %c", &estado2);
     printf("Digite o código da carta (ex: A01): ");
-    scanf("%s", codigo2);
+    scanf("%49s", codigo2);
     printf("Digite o nome da cidade: ");
     scanf(" %49[^\n]", nomeCidade2);
     printf("Digite a população da cidade: ");
@@ -99,7 +99,7 @@ int main() {
     printf("Número de Pontos Turísticos: %d\n", pontosTuristicos1);
     printf("Densidade Populacional: %.2f habitantes/km²\n", densidadePopulacional1);
     printf("PIB per capita: %.2f reais\n", pibPerCapita1);
-    printf("Super Poder: %.2f\n", superPoder1);
+    printf("Super Poder: %.2lf\n", superPoder1);
     printf("--------------\n");
 
     // --- Exibição carta 2 ---
@@ -113,7 +113,7 @@ int main() {
     printf("Número de Pontos Turísticos: %d\n", pontosTuristicos2);
     printf("Densidade Populacional: %.2f habitantes/km²\n", densidadePopulacional2);
     printf("PIB per capita: %.2f reais\n", pibPerCapita2);
-    printf("Super Poder: %.2f\n", superPoder2);
+    printf("Super Poder: %.2lf\n", superPoder2);
     printf("--------------\n");
 
     // --- Comparação de cartas (Atributo: População) ---
