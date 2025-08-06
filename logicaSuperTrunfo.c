@@ -57,7 +57,7 @@ int main() {
     scanf("%d", &pontosTuristicos2);
 
     // --- Cálculos carta 1 ---
-    if (area1 != 0.0f)
+    if ((double)area1 != 0.0)
         densidadePopulacional1 = (double)populacao1 / (double)area1;
     else {
         printf("Atenção: Área da Carta 1 é zero! Densidade definida como 0.\n");
@@ -73,7 +73,7 @@ int main() {
     superPoder1 = (double)populacao1 + (double)area1 + (double)pib1 + (double)pontosTuristicos1 + pibPerCapita1 + invDensidade1;
 
     // --- Cálculos carta 2 ---
-    if (area2 != 0.0f)
+    if ((double)area2 != 0.0)
         densidadePopulacional2 = (double)populacao2 / (double)area2;
     else {
         printf("Atenção: Área da Carta 2 é zero! Densidade definida como 0.\n");
