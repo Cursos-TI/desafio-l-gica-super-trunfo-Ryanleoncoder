@@ -58,35 +58,35 @@ int main() {
 
     // --- Cálculos carta 1 ---
     if (area1 != 0.0f)
-        densidadePopulacional1 = (float)populacao1 / area1;
+        densidadePopulacional1 = (double)populacao1 / (double)area1;
     else {
         printf("Atenção: Área da Carta 1 é zero! Densidade definida como 0.\n");
     }
 
     if (populacao1 != 0)
-        pibPerCapita1 = pib1 * 1000000000.0f / populacao1;
+        pibPerCapita1 = (double)pib1 * 1000000000.0 / (double)populacao1;
     else {
         printf("Atenção: População da Carta 1 é zero! PIB per Capita definido como 0.\n");
     }
 
-    float invDensidade1 = (densidadePopulacional1 != 0.0f) ? (1.0f / densidadePopulacional1) : 0.0f;
-    superPoder1 = populacao1 + area1 + pib1 + pontosTuristicos1 + pibPerCapita1 + invDensidade1;
+    double invDensidade1 = (densidadePopulacional1 != 0.0) ? (1.0 / densidadePopulacional1) : 0.0;
+    superPoder1 = (double)populacao1 + (double)area1 + (double)pib1 + (double)pontosTuristicos1 + pibPerCapita1 + invDensidade1;
 
     // --- Cálculos carta 2 ---
     if (area2 != 0.0f)
-        densidadePopulacional2 = (float)populacao2 / area2;
+        densidadePopulacional2 = (double)populacao2 / (double)area2;
     else {
         printf("Atenção: Área da Carta 2 é zero! Densidade definida como 0.\n");
     }
 
     if (populacao2 != 0)
-        pibPerCapita2 = pib2 * 1000000000.0f / populacao2;
+        pibPerCapita2 = (double)pib2 * 1000000000.0 / (double)populacao2;
     else {
         printf("Atenção: População da Carta 2 é zero! PIB per Capita definido como 0.\n");
     }
 
-    float invDensidade2 = (densidadePopulacional2 != 0.0f) ? (1.0f / densidadePopulacional2) : 0.0f;
-    superPoder2 = populacao2 + area2 + pib2 + pontosTuristicos2 + pibPerCapita2 + invDensidade2;
+    double invDensidade2 = (densidadePopulacional2 != 0.0) ? (1.0 / densidadePopulacional2) : 0.0;
+    superPoder2 = (double)populacao2 + (double)area2 + (double)pib2 + (double)pontosTuristicos2 + pibPerCapita2 + invDensidade2;
 
     // --- Exibição carta 1 ---
     printf("\n--- Carta 1 ---\n");
@@ -97,8 +97,8 @@ int main() {
     printf("Área: %.2f km²\n", area1);
     printf("PIB: %.2f bilhões de reais\n", pib1);
     printf("Número de Pontos Turísticos: %d\n", pontosTuristicos1);
-    printf("Densidade Populacional: %.2f habitantes/km²\n", densidadePopulacional1);
-    printf("PIB per capita: %.2f reais\n", pibPerCapita1);
+    printf("Densidade Populacional: %.2lf habitantes/km²\n", densidadePopulacional1);
+    printf("PIB per capita: %.2lf reais\n", pibPerCapita1);
     printf("Super Poder: %.2lf\n", superPoder1);
     printf("--------------\n");
 
@@ -111,8 +111,8 @@ int main() {
     printf("Área: %.2f km²\n", area2);
     printf("PIB: %.2f bilhões de reais\n", pib2);
     printf("Número de Pontos Turísticos: %d\n", pontosTuristicos2);
-    printf("Densidade Populacional: %.2f habitantes/km²\n", densidadePopulacional2);
-    printf("PIB per capita: %.2f reais\n", pibPerCapita2);
+    printf("Densidade Populacional: %.2lf habitantes/km²\n", densidadePopulacional2);
+    printf("PIB per capita: %.2lf reais\n", pibPerCapita2);
     printf("Super Poder: %.2lf\n", superPoder2);
     printf("--------------\n");
 
@@ -130,5 +130,5 @@ int main() {
     }
     printf("--------------\n");
 
-
+    return 0;
 }
