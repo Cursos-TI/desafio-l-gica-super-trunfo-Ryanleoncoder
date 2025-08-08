@@ -1,5 +1,5 @@
 /// Descrição do projeto : Este código é uma implementação simples de um jogo de cartas chamado "Super Trunfo" em C.
-// nivel logica intermediário
+// nivel logica aventureiro
 
 #include <stdio.h>
 
