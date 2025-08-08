@@ -116,6 +116,12 @@ int main() {
     printf("Super Poder: %.2lf\n", superPoder2);
     printf("--------------\n");
 
+    printf("\\n--- Resultados das Comparações Diretas (1=C1 Venceu/0=C1 Perdeu ou Empatou) ---\\n");    
+    printf("População: %d\\n", populacao1 > populacao2 ? 1 : 0);    
+    printf("Área: %d\\n", area1 > area2 ? 1 : 0);    
+    printf("PIB: %d\\n", pib1 > pib2 ? 1 : 0);    
+    printf("Pontos Turísticos: %d\\n", pontosTuristicos1 > pontosTuristicos2 ? 1 : 0); 
+       
     // --- Menu de Comparação de cartas ---
     int escolha;
     printf("\n---- COMPARAÇÃO DE CARTAS  ----\n");
