@@ -171,7 +171,7 @@ int main() {
         printf("Resultado: Empate!\n");
     }
 
-} else if (escolha == 2) {  // Área
+    } else if (escolha == 2) {  // Área
     printf("Atributo: Área\n");
     printf("%s: %.2lf km²\n", nomeCidade1, area1);
     printf("%s: %.2lf km²\n", nomeCidade2, area2);
@@ -184,7 +184,7 @@ int main() {
         printf("Resultado: Empate!\n");
     }
 
-} else if (escolha == 3) {  // PIB
+    } else if (escolha == 3) {  // PIB
     printf("Atributo: PIB\n");
     printf("%s: %.2lf bilhões\n", nomeCidade1, pib1);
     printf("%s: %.2lf bilhões\n", nomeCidade2, pib2);
@@ -197,7 +197,7 @@ int main() {
         printf("Resultado: Empate!\n");
     }
 
-} else if (escolha == 4) {  // Pontos turísticos
+    } else if (escolha == 4) {  
     printf("Atributo: Número de Pontos Turísticos\n");
     printf("%s: %d\n", nomeCidade1, pontosTuristicos1);
     printf("%s: %d\n", nomeCidade2, pontosTuristicos2);
@@ -210,7 +210,7 @@ int main() {
         printf("Resultado: Empate!\n");
     }
 
-} else if (escolha == 5) {  // Densidade demográfica (regra invertida)
+    } else if (escolha == 5) {  
     printf("Atributo: Densidade Demográfica\n");
     printf("%s: %.2lf habitantes/km²\n", nomeCidade1, densidadePopulacional1);
     printf("%s: %.2lf habitantes/km²\n", nomeCidade2, densidadePopulacional2);
@@ -223,11 +223,11 @@ int main() {
         printf("Resultado: Empate!\n");
     }
 
-} else {
+    } else {
     printf("Opção inválida! Tente novamente.\n");
-}
-printf("--------------\n");
+ }
+ printf("--------------\n");
 
-return 0;
+ return 0;
 
 }
